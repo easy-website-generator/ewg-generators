@@ -1,0 +1,18 @@
+development: &default
+  enabled: true
+  install: 'gulp-htmlmin'
+  source: 'src/assets/public'
+  target: 'dist'
+  selector: '**/*.html'
+  options:
+    collapseWhitespace: true
+    removeComments: true
+    minifyJS: true
+    minifyCSS: true
+
+
+test:
+  <<: *default
+
+production:
+  <<: *default

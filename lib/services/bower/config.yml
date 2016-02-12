@@ -1,0 +1,11 @@
+development: &default
+  enabled: true
+  install: 'gulp-bower'
+  target: 'dist/lib'
+
+
+test:
+  <<: *default
+
+production:
+  <<: *default

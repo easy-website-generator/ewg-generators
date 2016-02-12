@@ -1,0 +1,18 @@
+development: &default
+  enabled: true
+  install: 'gulp-sitemap gulp-ignore'
+  source: 'dist'
+  selector: '*.html'
+  target: 'dist'
+  siteUrl: 'http://github.com/easy-website-generator'
+  fileName: 'sitemap.xml'
+  changefreq: 'weekly'
+  blacklist:
+    - ''
+
+
+test:
+  <<: *default
+
+production:
+  <<: *default

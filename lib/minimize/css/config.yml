@@ -1,0 +1,14 @@
+development: &default
+  enabled: true
+  install: 'gulp-cssnano gulp-rename'
+  source: 'src/assets/styles'
+  target: 'dist/styles'
+  selector: '**/*.css'
+  suffix: ''
+
+
+test:
+  <<: *default
+
+production:
+  <<: *default

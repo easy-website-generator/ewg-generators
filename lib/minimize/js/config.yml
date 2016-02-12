@@ -1,0 +1,16 @@
+development: &default
+  enabled: true
+  install: gulp-uglify gulp-rename'
+  suffix: ''
+  selector: '**/*.js'
+  repetitive:
+    -
+      source: 'src/scripts'
+      target: 'dist/scripts'
+
+
+test:
+  <<: *default
+
+production:
+  <<: *default
